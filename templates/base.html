@@ -1,0 +1,61 @@
+{% load staticfiles i18n cms_tags menu_tags sekizai_tags %}
+{# latest version from 5.3.0 https://html5boilerplate.com/ #}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
+        <meta name="description" content="{% page_attribute 'meta_description' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+
+        {% render_block "css" %}
+        {{ ALDRYN_SNAKE.render_head }}
+    </head>
+    <body>
+        {% cms_toolbar %}
+
+        <!--[if lt IE 8]>
+            {% blocktrans %}
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            {% endblocktrans %}
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <ul>
+            {% show_menu 0 0 100 100 %}
+        </ul>
+
+        {% block content %}
+            <p>Hello world! This is the HTML5 Boilerplate.</p>
+        {% endblock %}
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"><\/script>')</script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+        {# use "Aldryn Google Analytics" from within "Manage Addons" to include the tracking code instead #}
+        {% comment %}
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        {% endcomment %}
+
+        {% render_block "js" %}
+        {{ ALDRYN_SNAKE.render_tail }}
+    </body>
+</html>
