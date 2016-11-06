@@ -46,9 +46,6 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-/*  position: absolute;
-*/  top: 0;
-  left: 0;
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
