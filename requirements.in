@@ -3,5 +3,6 @@ https://control.aldryn.com/api/v1/apps/serve/aldryn-addons/1.0.2/24f5d1c8-66fe-4
 https://control.aldryn.com/api/v1/apps/serve/aldryn-django/1.8.16.0/504b6173-d90a-4acf-a0fc-971e420f606b/aldryn-django-1.8.16.0.tar.gz#egg=aldryn-django==1.8.16.0
 https://control.aldryn.com/api/v1/apps/serve/aldryn-sso/1.1.8/222471ab-4846-46bc-99af-b2ef567b5455/aldryn-sso-1.1.8.tar.gz#egg=aldryn-sso==1.1.8
 https://control.aldryn.com/api/v1/apps/serve/aldryn-devsync/1.1.1/3cd345be-2652-4aba-8a10-eb369a3dfbb4/aldryn-devsync-1.1.1.tar.gz#egg=aldryn-devsync==1.1.1
+https://control.aldryn.com/api/v1/apps/serve/djangocms-text-ckeditor/3.3.1.1/4c412842-e6bb-465d-a2ab-6d051277a7eb/djangocms-text-ckeditor-3.3.1.1.tar.gz#egg=djangocms-text-ckeditor==3.3.1.1
 https://control.aldryn.com/api/v1/apps/serve/django-filer/1.2.5.1/76ee6a08-6d1c-432d-b2c0-e92cd0eda59d/django-filer-1.2.5.1.tar.gz#egg=django-filer==1.2.5.1
 # </INSTALLED_ADDONS>
