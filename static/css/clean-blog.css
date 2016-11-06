@@ -51,7 +51,7 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-}
+background-color: #03256c}
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
