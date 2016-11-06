@@ -1,0 +1,6 @@
+{
+    "installed-apps": [
+        "aldryn_style"
+    ], 
+    "package-name": "aldryn-style"
+}
