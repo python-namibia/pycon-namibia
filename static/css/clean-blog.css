@@ -115,14 +115,14 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #C60028;
+    color: #333333;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #0085A1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #C60028;
+    color: #333333;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
@@ -151,7 +151,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: #C60028;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
