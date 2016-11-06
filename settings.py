@@ -7,6 +7,7 @@ INSTALLED_ADDONS = [
     'aldryn-sso',
     'aldryn-django-cms',
     'aldryn-devsync',
+    'aldryn-background-image',
     'aldryn-bootstrap3',
     'aldryn-newsblog',
     'aldryn-style',
