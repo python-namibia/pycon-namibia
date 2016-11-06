@@ -176,6 +176,7 @@ hr.small {
   display: block;
   font-weight: 300;
   margin: 10px 0 0;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
