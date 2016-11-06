@@ -82,7 +82,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: #C60028;
+    color: white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -115,14 +115,14 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #333333;
+    color: #C60028;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #0085A1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #333333;
+    color: #C60028;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
