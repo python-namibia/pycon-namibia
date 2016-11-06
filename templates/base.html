@@ -29,10 +29,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    {% render_block 'css' %}
+    {{ ALDRYN_SNAKE.render_head }}
 
 </head>
 
 <body>
+    {% cms_toobar %}
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -146,7 +149,8 @@
 
     <!-- Theme JavaScript -->
     <script src="{% static 'js/clean-blog.min.js' %}"></script>
-
+    {% render_block 'js' %}
+    {{ ALDRYN_SNAKE.render_tail }}
 </body>
 
 </html>
