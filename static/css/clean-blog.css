@@ -50,6 +50,9 @@ hr.small {
 
 /* -------------- masthead ----------------- */
 
+#masthead {
+    background: #03256c;
+}
 
 /* -------------- navbar -------------- */
 .navbar-custom {
