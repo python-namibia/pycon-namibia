@@ -53,6 +53,8 @@ hr.small {
 #masthead {
     background: #03256c;
     padding: 30px;
+    font-weight: bold;
+    color: #ffce00;
 }
 
 /* -------------- navbar -------------- */
