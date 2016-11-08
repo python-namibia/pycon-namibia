@@ -52,9 +52,9 @@ hr.small {
 
 #masthead {
     background: #03256c;
+    padding: 30px;
 }
 #masthead #logo {
-    padding: 30px;
 }
 
 /* -------------- navbar -------------- */
