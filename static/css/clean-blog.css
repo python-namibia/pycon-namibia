@@ -51,11 +51,18 @@ hr.small {
 /* -------------- masthead ----------------- */
 
 #masthead {
-    background: #03256c;
-    padding: 30px 0 10px 30px;
-    font-weight: bold;
-    color: #ffce00;
-    font-size: 120%;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #masthead {
+        display: visible;
+        background: #03256c;
+        padding: 30px 0 10px 30px;
+        font-weight: bold;
+        color: #ffce00;
+        font-size: 120%;
+    }
 }
 
 #masthead p {margin: 40px 0 0;}
