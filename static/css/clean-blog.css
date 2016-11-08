@@ -48,6 +48,13 @@ hr.small {
   border-color: white;
 }
 
+/* -------------- masthead ----------------- */
+
+@media only screen and (min-width: 768px) {
+    #masthead {
+        height: 175px;
+    }
+}
 /* -------------- navbar -------------- */
 .navbar-custom {
   position: absolute;
