@@ -59,3 +59,21 @@
         {{ ALDRYN_SNAKE.render_tail }}
     </body>
 </html>
+
+
+    <!-- Set your background image for this header on the line below. -->
+    {% placeholder header or %}
+      <header class="intro-header" style="background-image: url({% static 'img/mountains.jpg' %})">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                      <div class="page-heading">
+                          <h1>{{ request.site.name }}</h1>
+                          <span class="subheading">Windhoek, 20th to 24th February</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+    {% endplaceholder %}
+
