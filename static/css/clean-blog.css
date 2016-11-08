@@ -53,8 +53,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
     #masthead {
         height: 175px;
-        background-image: url('../img/logo.png');
-        background-size: 600px 80px;
+        background: url('../img/logo.png') 600px 80px no-repeat;
     }
 }
 /* -------------- navbar -------------- */
