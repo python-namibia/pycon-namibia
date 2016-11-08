@@ -58,7 +58,7 @@ hr.small {
     font-size: 120%;
 }
 
-#masthead p {margin: 0;}
+#masthead p {margin: 40px 0 0;}
 
 /* -------------- navbar -------------- */
 .navbar-custom {
