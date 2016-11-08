@@ -47,6 +47,8 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
+
+/* -------------- navbar -------------- */
 .navbar-custom {
   position: absolute;
   top: 0;
@@ -70,6 +72,8 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+/* +768 navbar */
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     /*background: transparent;*/
@@ -92,6 +96,8 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
 }
+
+/* +1170 navbar */
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
@@ -139,6 +145,8 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+/* -------------- intro-header -------------- */
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
@@ -155,6 +163,7 @@ hr.small {
   padding: 100px 0 50px;
   color: #C60028;
 }
+
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
