@@ -50,12 +50,7 @@ hr.small {
 
 /* -------------- masthead ----------------- */
 
-@media only screen and (min-width: 768px) {
-    #masthead {
-        height: 175px;
-        background: no-repeat 0 0 300px 80px url('../img/logo.png');
-    }
-}
+
 /* -------------- navbar -------------- */
 .navbar-custom {
   width: 100%;
