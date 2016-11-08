@@ -53,6 +53,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
     #masthead {
         height: 175px;
+        background-image: url({% static 'img/mountains.jpg' %})
     }
 }
 /* -------------- navbar -------------- */
