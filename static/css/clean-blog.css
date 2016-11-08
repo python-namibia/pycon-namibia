@@ -168,7 +168,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 170px 0 130px;
     font-size: 24px;
   }
 }
