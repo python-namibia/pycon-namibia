@@ -54,7 +54,7 @@ hr.small {
     background: #03256c;
 }
 #masthead #logo {
-    margin: 30px;
+    padding: 30px;
 }
 
 /* -------------- navbar -------------- */
