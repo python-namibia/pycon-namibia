@@ -54,6 +54,7 @@ hr.small {
     #masthead {
         height: 175px;
         background-image: url('../img/logo.png');
+        background-size: 600px 80px;
     }
 }
 /* -------------- navbar -------------- */
