@@ -195,7 +195,11 @@ hr.small {
   .intro-header .page-heading h1 {
     font-size: 50px;
   }
+  .intro-header .page-heading .subheading {
+    font-size: 32px;
+  }
 }
+
 .intro-header .post-heading h1 {
   font-size: 20px;
 }
