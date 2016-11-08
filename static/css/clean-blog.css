@@ -52,7 +52,7 @@ hr.small {
 
 #masthead {
     background: #03256c;
-    padding: 30px 30px 0 0;
+    padding: 30px 0 0 30px;
     font-weight: bold;
     color: #ffce00;
     font-size: 120%;
