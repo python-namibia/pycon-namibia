@@ -305,6 +305,7 @@ hr.small {
 footer {
   padding: 50px 0 65px;
   background: #128734;
+  color: white;
 }
 footer .list-inline {
   margin: 0;
