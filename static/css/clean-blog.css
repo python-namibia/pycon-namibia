@@ -306,9 +306,10 @@ footer {
   padding: 50px 0 65px;
   background: #128734;
   color: white;
+  font-size: 12px;
 }
 
-footer h1 {font-size: 12px;}
+footer h1 {font-size: 16px;}
 
 footer .list-inline {
   margin: 0;
