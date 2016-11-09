@@ -307,6 +307,9 @@ footer {
   background: #128734;
   color: white;
 }
+
+footer h1 {font-size: 12px;}
+
 footer .list-inline {
   margin: 0;
   padding: 0;
