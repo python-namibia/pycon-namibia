@@ -64,7 +64,6 @@ hr.small {
     }
 }
 
-#masthead #logo {}
 #masthead #site-name {
     float: right;
     text-align: right;
@@ -80,7 +79,10 @@ span.year {color: #03256c; background: #ffce00; padding: 0px 2px; border-radius:
     padding: 10px 0 0;
 }
 
-
+/* +768 masthead */
+@media only screen and (min-width: 768px) {
+    #masthead #site-name {font-size: 150%;}
+}
 
 /* -------------- navbar -------------- */
 .navbar-custom {
