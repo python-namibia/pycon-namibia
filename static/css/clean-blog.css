@@ -68,6 +68,7 @@ hr.small {
 }
 
 #masthead #logo {float: left;}
+#masthead #title {float: right;}
 
 #masthead p {margin: 40px 0 0;}
 
