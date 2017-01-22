@@ -253,6 +253,7 @@ hr.small {
 
 /* -------------- container -------------- */
 
+.container {background: white}
 
 .post-preview > a {
   color: #333333;
