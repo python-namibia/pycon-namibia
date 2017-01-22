@@ -52,7 +52,6 @@ hr.small {
 
 #masthead {
     background: #03256c;
-    font-weight: bold;
     color: #ffce00;
     padding: 15px;
 }
@@ -66,7 +65,12 @@ hr.small {
 }
 
 #masthead #logo {float: left;}
-#masthead #site-name {text-align: right; font-size: 100%; font-size: 130%;}
+#masthead #site-name {
+    text-align: right;
+    font-size: 100%;
+    font-size: 130%;
+    font-weight: bold;
+}
 
 #masthead p {
     font-size: 100%;
