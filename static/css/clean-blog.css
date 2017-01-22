@@ -67,7 +67,11 @@ hr.small {
     }
 }
 
+#masthead #logo {float: left;}
+
 #masthead p {margin: 40px 0 0;}
+
+
 
 /* -------------- navbar -------------- */
 .navbar-custom {
