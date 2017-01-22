@@ -464,4 +464,4 @@ body {
   -webkit-tap-highlight-color: #0085A1;
 }
 
-.btn-primary {background: #03256c;}
+.btn-primary {background: #03256c; text-decoration: none;}
