@@ -82,6 +82,9 @@ span.year {color: #03256c; background: #ffce00; padding: 0px 2px; border-radius:
 /* +768 masthead */
 @media only screen and (min-width: 768px) {
     #masthead #site-name {font-size: 150%; padding-top: 15px;}
+    #masthead p {
+        font-size: 100%;
+    }
 }
 
 /* -------------- navbar -------------- */
