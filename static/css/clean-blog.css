@@ -51,16 +51,19 @@ hr.small {
 /* -------------- masthead ----------------- */
 
 #masthead {
+    dixsplay: none;
+    background: #03256c;
+    font-weight: bold;
+    color: #ffce00;
+    font-size: 120%;
 }
 
 @media only screen and (min-width: 768px) {
     #masthead {
         display: block;
-        background: #03256c;
+
         padding: 30px 0 10px 30px;
-        font-weight: bold;
-        color: #ffce00;
-        font-size: 120%;
+
     }
 }
 
