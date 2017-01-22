@@ -69,7 +69,10 @@ hr.small {
 #masthead #logo {float: left;}
 #masthead #site-name {text-align: right;}
 
-#masthead p {padding: 20px 0 0;}
+#masthead p {
+    margin: 0;
+    padding: 20px 0 0;
+}
 
 
 
