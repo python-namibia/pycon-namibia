@@ -69,6 +69,7 @@ hr.small {
 #masthead #site-name {text-align: right; font-size: 100%; font-size: 130%;}
 
 #masthead p {
+    font-size: 100%;
     margin: 0;
     padding: 12px 0 0;
 }
