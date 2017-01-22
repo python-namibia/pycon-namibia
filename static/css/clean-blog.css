@@ -464,4 +464,5 @@ body {
   -webkit-tap-highlight-color: #0085A1;
 }
 
-.btn-primary {background: #03256c; text-decoration: none;}
+.btn-primary {background: #03256c; text-decoration: none; border-radius: 2px;}
+.btn-success {background: #128734; text-decoration: none; border-radius: 2px;}
