@@ -64,7 +64,7 @@ hr.small {
     }
 }
 
-#masthead #logo {float: left;}
+#masthead #logo {}
 #masthead #site-name {
     text-align: right;
     font-size: 130%;
