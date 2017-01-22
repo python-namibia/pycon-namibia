@@ -8,7 +8,6 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333333;
-  background: #128734;
 }
 
 p {
@@ -253,7 +252,6 @@ hr.small {
 
 /* -------------- container -------------- */
 
-.container {background: white}
 
 .post-preview > a {
   color: #333333;
