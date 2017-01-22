@@ -71,7 +71,7 @@ hr.small {
     font-weight: bold;
 }
 
-span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px; border-radius: 2px;}
+span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px 1px; border-radius: 2px;}
 
 #masthead p {
     font-size: 90%;
