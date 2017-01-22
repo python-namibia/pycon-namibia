@@ -71,6 +71,8 @@ hr.small {
     font-weight: bold;
 }
 
+span.year {color: #03256c; background: #ffce00; padding: 1px; border-radius: 2px;}
+
 #masthead p {
     font-size: 100%;
     margin: 0;
