@@ -249,6 +249,11 @@ hr.small {
       font-size: 30px;
   }
 }
+
+/* -------------- container -------------- */
+
+.container  {background: red;}
+
 .post-preview > a {
   color: #333333;
 }
