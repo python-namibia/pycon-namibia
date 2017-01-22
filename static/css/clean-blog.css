@@ -68,7 +68,7 @@ hr.small {
 }
 
 #masthead #logo {float: left;}
-#masthead #site-name {float: right;}
+#masthead #site-name {text-align: right;}
 
 #masthead p {margin: 40px 0 0;}
 
