@@ -473,5 +473,5 @@ body {
 
 .btn-primary, .btn-primary:hover {background: #03256c;}
 .btn-success, .btn-success:hover {background: #128734;}
-.btn-warning, .btn-warning:hover {background: #ffce00;}
+.btn-warning, .btn-warning:hover {background: #ffce00; color: black;}
 .btn-danger, .btn-danger:hover {background: #C60028;}
