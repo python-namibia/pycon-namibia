@@ -1,7 +1,7 @@
 # <INSTALLED_ADDONS>  # Warning: text inside the INSTALLED_ADDONS tags is auto-generated. Manual changes will be overwritten.
 https://control.divio.com/api/v1/apps/serve/aldryn-addons/1.0.2/24f5d1c8-66fe-43b2-a540-17d61045a72b/aldryn-addons-1.0.2.tar.gz#egg=aldryn-addons==1.0.2
 https://control.divio.com/api/v1/apps/serve/aldryn-django/1.8.16.3/a1a210ac-07fd-4ab0-b373-98c87ac64327/aldryn-django-1.8.16.3.tar.gz#egg=aldryn-django==1.8.16.3
-https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.1.8/222471ab-4846-46bc-99af-b2ef567b5455/aldryn-sso-1.1.8.tar.gz#egg=aldryn-sso==1.1.8
+https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.1.10/b9ebff5c-5bca-4129-9436-a2a5e5c92064/aldryn-sso-1.1.10.tar.gz#egg=aldryn-sso==1.1.10
 https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.4.2.4/d2d31dbd-3b4d-4101-a5f6-1dad34b5f930/aldryn-django-cms-3.4.2.4.tar.gz#egg=aldryn-django-cms==3.4.2.4
 https://control.divio.com/api/v1/apps/serve/aldryn-devsync/1.1.2/42c1ce27-4139-4c0d-a2ba-fffe2db318f8/aldryn-devsync-1.1.2.tar.gz#egg=aldryn-devsync==1.1.2
 https://control.divio.com/api/v1/apps/serve/aldryn-background-image/0.1.1/9e382593-2767-47af-82da-b586b1b0a8ea/aldryn-background-image-0.1.1.tar.gz#egg=aldryn-background-image==0.1.1
