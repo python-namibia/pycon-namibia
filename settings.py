@@ -35,3 +35,26 @@ INSTALLED_APPS.extend([
 MIDDLEWARE_CLASSES.extend([
     # add your own middlewares here
 ])
+
+CKEDITOR_SETTINGS = {}
+
+CKEDITOR_SETTINGS['stylesSet'] = [
+    {
+        'name': 'Talk Title',
+        'element': 'p',
+        'attributes': { 'class': 'talk-title' },
+     },
+    {
+        'name': 'Speaker',
+        'element': 'h3',
+        'attributes': { 'class': 'speaker' },
+     },
+]
+#     'language': '{{ language }}',
+#     'toolbar_CMS': [
+#         ['Undo', 'Redo'],
+#         ['cmsplugins', '-', 'ShowBlocks'],
+#         ['Format', 'Styles'],
+#     ],
+#     'skin': 'moono',
+# }

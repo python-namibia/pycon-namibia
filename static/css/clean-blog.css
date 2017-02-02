@@ -26,6 +26,10 @@ h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+
+h2 {font-size: 24px;}
+h3 {font-size: 18px;}
+
 a {
   color: #C60028;
 }
@@ -475,3 +479,6 @@ body {
 .btn-success, .btn-success:hover {background: #128734;}
 .btn-warning, .btn-warning:hover {background: #ffce00; color: black;}
 .btn-danger, .btn-danger:hover {background: #C60028;}
+
+p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
+h3.speaker {margin-bottom: 0; padding-bottom: 0;}
