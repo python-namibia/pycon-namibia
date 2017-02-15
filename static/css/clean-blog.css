@@ -512,6 +512,7 @@ table th {
 
 table td, table th {
     text-align: left;
+    padding: 10px;
 }
 
 table tbody td {
