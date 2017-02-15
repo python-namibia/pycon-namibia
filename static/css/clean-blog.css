@@ -502,7 +502,6 @@ table caption {
 table th {
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .02em;
     font-size: .9353rem;
     padding: 1.2307em 1.0833em 1.0833em;
     line-height: 1.333;
