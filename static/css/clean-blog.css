@@ -489,7 +489,8 @@ table {
     line-height: 1.662;
     font-weight: 400;
     font-style: normal;
-    border: 1px solid #d5d5d2
+    border: 1px solid #d5d5d2;
+    margin: 10px 0;
 }
 
 table caption {
