@@ -514,16 +514,6 @@ table td, table th {
     text-align: left;
 }
 
-table tbody tr:nth-of-type(even) {
-    background-color: #128734;
-    color: white;
-}
-
-table tbody tr:nth-of-type(odd) {
-    background-color: transparent;
-    color: black;
-}
-
 table tbody td {
     border-top: 1px solid #128734
 }
