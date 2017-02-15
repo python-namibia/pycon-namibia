@@ -512,15 +512,16 @@ table th {
 
 table td, table th {
     text-align: left;
-    color: white;
 }
 
 table tbody tr:nth-of-type(even) {
-    background-color: #128734
+    background-color: #128734;
+    color: white;
 }
 
 table tbody tr:nth-of-type(odd) {
-    background-color: transparent
+    background-color: transparent;
+    color: black;
 }
 
 table tbody td {
