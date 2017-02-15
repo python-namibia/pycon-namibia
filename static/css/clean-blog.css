@@ -482,3 +482,13 @@ body {
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.662;
+    font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #d5d5d2
+}
