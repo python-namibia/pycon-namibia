@@ -478,7 +478,7 @@ body {
 .btn-primary, .btn-primary:hover {background: #03256c;} /* blue */
 .btn-success, .btn-success:hover {background: #128734;} /* green */
 .btn-warning, .btn-warning:hover {background: #ffce00; color: black;} /* yellow */
-.btn-danger, .btn-danger:hover {background: #C60028;}
+.btn-danger, .btn-danger:hover {background: #C60028;} /* red */
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
@@ -517,7 +517,7 @@ table td, table th {
 }
 
 table tbody td {
-    border-top: 1px solid #128734;
+    border: 1px solid #C60028;
     background: #ffce00;
 }
 
