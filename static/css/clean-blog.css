@@ -518,6 +518,7 @@ table td, table th {
 table tbody td {
     border-top: 1px solid #128734;
     background: #ffce00;
+    margin: 2px;
 }
 
 table tbody th {
