@@ -528,3 +528,11 @@ table tbody td {
     border-top: 1px solid #128734
 }
 
+table tbody th {
+    text-align: left
+}
+
+table.wdn_responsive_table thead tr {
+    display: none
+}
+
