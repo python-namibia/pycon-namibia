@@ -129,7 +129,7 @@ span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px 1px; border-
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    padding: 20px 5px;
+    padding: 20px 10px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
