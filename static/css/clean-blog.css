@@ -500,3 +500,15 @@ table caption {
     margin-bottom: .75em
 }
 
+table th {
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-size: .9353rem;
+    padding: 1.2307em 1.0833em 1.0833em;
+    line-height: 1.333;
+    border-top: 1px solid #d5d5d2;
+    background-color: #f5f3ef
+}
+
