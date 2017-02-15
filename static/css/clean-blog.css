@@ -475,7 +475,7 @@ body {
     border-radius: 2px;
 }
 
-.btn-primary, .btn-primary:hover {background: #03256c;}
+.btn-primary, .btn-primary:hover {background: #03256c;} /* blue */
 .btn-success, .btn-success:hover {background: #128734;}
 .btn-warning, .btn-warning:hover {background: #ffce00; color: black;}
 .btn-danger, .btn-danger:hover {background: #C60028;}
@@ -509,6 +509,7 @@ table th {
     padding: 1.2307em 1.0833em 1.0833em;
     line-height: 1.333;
     border-top: 1px solid #d5d5d2;
+    color: white;
     background-color: #03256c;
 }
 
