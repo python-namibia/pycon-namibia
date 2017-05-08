@@ -1,11 +1,17 @@
-# <DOCKER_FROM>  # Warning: text inside the DOCKER_FROM tags is auto-generated. Manual changes will be overwritten.
+# <WARNING>
+# Everything within sections like <TAG> is generated and can
+# be automatically replaced on deployment. You can disable
+# this functionality by simply removing the wrapping tags.
+# </WARNING>
+
+# <DOCKER_FROM>
 FROM aldryn/base-project:py3-3.21
 # </DOCKER_FROM>
 
-# <DOCKER_BUILD>  # Warning: text inside the DOCKER_BUILD tags is auto-generated. Manual changes will be overwritten.
+# <BOWER>
+# </BOWER>
 
-# python requirements
-# -------------------
+# <PYTHON>
 ENV PIP_INDEX_URL=${PIP_INDEX_URL:-https://wheels.aldryn.net/v1/aldryn-extras+pypi/aldryn-baseproject-py3/+simple/} \
     WHEELSPROXY_URL=${WHEELSPROXY_URL:-https://wheels.aldryn.net/v1/aldryn-extras+pypi/aldryn-baseproject-py3/}
 COPY requirements.* /app/
@@ -15,14 +21,19 @@ RUN pip-reqs compile && \
     pip install \
         --no-index --no-deps \
         --requirement requirements.urls
+# </PYTHON>
 
-# add full sourcecode
-# -------------------
+# <NPM>
+# </NPM>
+
+# <SOURCE>
 COPY . /app
+# </SOURCE>
 
-# collectstatic
-# -------------
+# <GULP>
+# </GULP>
+
+# <STATIC>
 RUN DJANGO_MODE=build python manage.py collectstatic --noinput
-
-# </DOCKER_BUILD>
+# </STATIC>
 
