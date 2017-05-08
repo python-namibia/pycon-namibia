@@ -69,6 +69,17 @@ class Form(forms.BaseForm):
             '"aldryn project up" to re-create the db container.'
         )
     )
+    disable_default_language_prefix = forms.CheckboxField(
+        'Remove URL language prefix for default language',
+        required=False,
+        initial=False,
+        help_text=(
+            'For example, http://example.com/ rather than '
+            'http://example.com/en/ if en (English) is the default language. '
+            'If multiple languages are configured, this option will be ignored '
+            'for Django versions prior to 1.10.'
+        )
+    )
 
     def to_settings(self, data, settings):
         import dj_database_url
@@ -486,17 +497,29 @@ class Form(forms.BaseForm):
     def i18n_settings(self, data, settings, env):
         settings['ALL_LANGUAGES'] = list(settings['LANGUAGES'])
         settings['ALL_LANGUAGES_DICT'] = dict(settings['ALL_LANGUAGES'])
-        languages = json.loads(data['languages'])
-        settings['LANGUAGE_CODE'] = languages[0]
+        languages = [
+            (code, settings['ALL_LANGUAGES_DICT'][code])
+            for code in json.loads(data['languages'])
+        ]
+        settings['LANGUAGE_CODE'] = languages[0][0]
         settings['USE_L10N'] = True
         settings['USE_I18N'] = True
-        settings['LANGUAGES'] = [
-            (code, settings['ALL_LANGUAGES_DICT'][code])
-            for code in languages
-        ]
+        settings['LANGUAGES'] = languages
         settings['LOCALE_PATHS'] = [
             os.path.join(settings['BASE_DIR'], 'locale'),
         ]
+
+        if len(languages) <= 1:
+            settings['PREFIX_DEFAULT_LANGUAGE'] = not data['disable_default_language_prefix']
+        else:
+            # this is not supported for django versions < 1.10
+            settings['PREFIX_DEFAULT_LANGUAGE'] = True
+
+        if not settings['PREFIX_DEFAULT_LANGUAGE']:
+            settings['MIDDLEWARE_CLASSES'].insert(
+                settings['MIDDLEWARE_CLASSES'].index('django.middleware.locale.LocaleMiddleware'),
+                'aldryn_django.middleware.LanguagePrefixFallbackMiddleware',
+            )
 
     def time_settings(self, settings, env):
         if env('TIME_ZONE'):
@@ -504,6 +527,7 @@ class Form(forms.BaseForm):
 
     def migration_settings(self, settings, env):
         from aldryn_django import storage
+        from aldryn_addons.utils import boolean_ish
 
         settings.setdefault('MIGRATION_COMMANDS', [])
         mcmds = settings['MIGRATION_COMMANDS']
@@ -511,7 +535,7 @@ class Form(forms.BaseForm):
         mcmds.append('CACHE_URL="locmem://" python manage.py createcachetable django_dbcache; exit 0')
         mcmds.append('python manage.py migrate --noinput')
 
-        if not env('DISABLE_S3_MEDIA_HEADERS_UPDATE'):
+        if not boolean_ish(env('DISABLE_S3_MEDIA_HEADERS_UPDATE')):
             if settings['DEFAULT_FILE_STORAGE'] == storage.SCHEMES['s3']:
                 mcmds.append('python manage.py aldryn_update_s3_media_headers')
 
