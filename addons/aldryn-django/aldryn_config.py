@@ -217,6 +217,8 @@ class Form(forms.BaseForm):
         return settings
 
     def domain_settings(self, data, settings, env):
+        from aldryn_addons.utils import boolean_ish
+
         settings['ALLOWED_HOSTS'] = env('ALLOWED_HOSTS', ['localhost', '*'])
         # will take a full config dict from ALDRYN_SITES_DOMAINS if available,
         # otherwise fall back to constructing the dict from DOMAIN,
@@ -226,6 +228,8 @@ class Form(forms.BaseForm):
             settings['DOMAIN'] = domain
 
         domains = env('ALDRYN_SITES_DOMAINS', {})
+        permanent_redirect = boolean_ish(env('ALDRYN_SITES_REDIRECT_PERMANENT', False))
+
         if not domains and domain:
             domain_aliases = [
                 d.strip()
@@ -246,6 +250,7 @@ class Form(forms.BaseForm):
                 },
             }
         settings['ALDRYN_SITES_DOMAINS'] = domains
+        settings['ALDRYN_SITES_REDIRECT_PERMANENT'] = permanent_redirect
 
         # This is ensured again by aldryn-sites, but we already do it here
         # as we need the full list of domains later when configuring
@@ -495,7 +500,12 @@ class Form(forms.BaseForm):
             settings['SERVER_EMAIL'] = server_email
 
     def i18n_settings(self, data, settings, env):
-        settings['ALL_LANGUAGES'] = list(settings['LANGUAGES'])
+        from django.utils.translation import ugettext_lazy
+
+        settings['ALL_LANGUAGES'] = [
+            (code, ugettext_lazy(name))
+            for code, name in settings['LANGUAGES']
+        ]
         settings['ALL_LANGUAGES_DICT'] = dict(settings['ALL_LANGUAGES'])
         languages = [
             (code, settings['ALL_LANGUAGES_DICT'][code])
