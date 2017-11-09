@@ -2,7 +2,7 @@
 https://control.divio.com/api/v1/apps/serve/aldryn-addons/1.0.2/24f5d1c8-66fe-43b2-a540-17d61045a72b/aldryn-addons-1.0.2.tar.gz#egg=aldryn-addons==1.0.2
 https://control.divio.com/api/v1/apps/serve/aldryn-django/1.8.18.3/162ac242-6b59-4f36-81c8-b5f003b6cb43/aldryn-django-1.8.18.3.tar.gz#egg=aldryn-django==1.8.18.3
 https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.1.16/dbe0c45a-c981-4beb-8624-b0d2c4196aa0/aldryn-sso-1.1.16.tar.gz#egg=aldryn-sso==1.1.16
-https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.4.3.1/f5cad7bb-e07d-4213-acd4-ffc3d74235e6/aldryn-django-cms-3.4.3.1.tar.gz#egg=aldryn-django-cms==3.4.3.1
+https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.4.5.3/e245771c-263d-43ea-b7f6-086a0a3df53b/aldryn-django-cms-3.4.5.3.tar.gz#egg=aldryn-django-cms==3.4.5.3
 https://control.divio.com/api/v1/apps/serve/aldryn-devsync/1.1.2/42c1ce27-4139-4c0d-a2ba-fffe2db318f8/aldryn-devsync-1.1.2.tar.gz#egg=aldryn-devsync==1.1.2
 https://control.divio.com/api/v1/apps/serve/aldryn-background-image/0.1.1/9e382593-2767-47af-82da-b586b1b0a8ea/aldryn-background-image-0.1.1.tar.gz#egg=aldryn-background-image==0.1.1
 https://control.divio.com/api/v1/apps/serve/aldryn-bootstrap3/1.2.2/ffa83c25-d86b-4b58-87ef-e1b05f43faa5/aldryn-bootstrap3-1.2.2.tar.gz#egg=aldryn-bootstrap3==1.2.2
