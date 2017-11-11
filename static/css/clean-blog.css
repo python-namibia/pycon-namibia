@@ -95,7 +95,8 @@ span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px 1px; border-
 .navbar-custom {
   width: 100%;
   z-index: 3;
-    background-color: #C60028
+  background-color: #C60028;
+  margin-bottom: 5px;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -529,3 +530,6 @@ table tbody th {
 table.wdn_responsive_table thead tr {
 }
 
+div.jumbotron {
+    background: #ffce00;
+}
