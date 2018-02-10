@@ -17,6 +17,8 @@ p {
 p a {
   text-decoration: underline;
 }
+.panel p {margin: 0;}
+.panel-body {padding-top: 0; padding-bottom: 0;}
 h1,
 h2,
 h3,
