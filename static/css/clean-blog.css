@@ -483,6 +483,26 @@ body {
 .btn-warning, .btn-warning:hover {background: #ffce00; color: black;} /* yellow */
 .btn-danger, .btn-danger:hover {background: #C60028;} /* red */
 
+.panel-primary>.panel-heading {
+    color: #ffce00;
+    background-color: #03256c;
+    border-color: #03256c;
+}
+
+.panel-warning>.panel-heading {
+    color: #03256c;
+    background-color: #ffce00;
+    border-color: #ffce00;
+}
+
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #128734;
+    border-color: #128734;
+}
+
+.panel-body {font-size: 90%; padding-left: 7px; padding-right: 2px;}
+
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
 
