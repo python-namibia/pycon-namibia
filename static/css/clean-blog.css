@@ -334,7 +334,7 @@ span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px 1px; border-
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 50px 0 65px;
+  padding: 25px 0;
   background: #128734;
   color: white;
   font-size: 14px;
@@ -342,6 +342,8 @@ footer {
 }
 
 footer h1 {font-size: 16px;}
+
+footer p {margin: 10px 0;}
 
 footer a {color: #A1D044;}
 
