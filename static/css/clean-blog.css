@@ -503,7 +503,8 @@ body {
     border-color: #128734;
 }
 
-.panel-body {font-size: 90%; padding-left: 7px; padding-right: 2px;}
+.panel-body {padding-left: 7px; padding-right: 2px;}
+.panel, .panel-title {font-size: 90%}
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
