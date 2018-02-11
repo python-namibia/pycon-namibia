@@ -17,8 +17,6 @@ p {
 p a {
   text-decoration: underline;
 }
-.panel p {margin: 0;}
-.panel-body {padding-top: 0; padding-bottom: 0;}
 h1,
 h2,
 h3,
@@ -485,6 +483,8 @@ body {
 .btn-warning, .btn-warning:hover {background: #ffce00; color: black;} /* yellow */
 .btn-danger, .btn-danger:hover {background: #C60028;} /* red */
 
+/* -------------- panels ----------------- */
+
 .panel-primary>.panel-heading {
     color: #ffce00;
     background-color: #03256c;
@@ -505,6 +505,8 @@ body {
 
 .smaller .panel-body {padding-left: 7px; padding-right: 2px;}
 .smaller .panel, .panel-title {font-size: 90%}
+.smaller .panel p {margin: 0;}
+.smaller .panel-body {padding-top: 0; padding-bottom: 0;}
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
