@@ -509,9 +509,12 @@ body {
     border-color: #C60028;
 }
 
-.smaller .panel-body {padding-left: 7px; padding-right: 2px;}
+.smaller .panel-body,
+.smaller .panel-heading {
+    padding-left: 7px; padding-right: 2px;
+    }
 .smaller .panel, .panel-title {font-size: 90%}
-.smaller .panel p {margin: 0;}
+.smaller .panel p {margin: 0 0 4px;}
 .smaller .panel-body {padding-top: 0; padding-bottom: 0;}
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
