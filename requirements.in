@@ -1,6 +1,6 @@
 # <INSTALLED_ADDONS>  # Warning: text inside the INSTALLED_ADDONS tags is auto-generated. Manual changes will be overwritten.
 https://control.divio.com/api/v1/apps/serve/aldryn-addons/1.0.2/24f5d1c8-66fe-43b2-a540-17d61045a72b/aldryn-addons-1.0.2.tar.gz#egg=aldryn-addons==1.0.2
-https://control.divio.com/api/v1/apps/serve/aldryn-django/1.8.19.1/5dfa4420-e075-4377-a4b7-9feeaa3f5efb/aldryn-django-1.8.19.1.tar.gz#egg=aldryn-django==1.8.19.1
+https://control.divio.com/api/v1/apps/serve/aldryn-django/1.11.15.1/f9e543d2-3127-4458-b0f5-d69d282bf0ac/aldryn-django-1.11.15.1.tar.gz#egg=aldryn-django==1.11.15.1
 https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.4.5/ac81fefa-4a6b-4d42-804a-24f5056481de/aldryn-sso-1.4.5.tar.gz#egg=aldryn-sso==1.4.5
 https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.5.2.2/88bf7991-90a3-4c98-acf5-42c3fa14e2a4/aldryn-django-cms-3.5.2.2.tar.gz#egg=aldryn-django-cms==3.5.2.2
 https://control.divio.com/api/v1/apps/serve/aldryn-devsync/1.1.4/a71c18c8-4738-497c-a3da-46ab59106ab8/aldryn-devsync-1.1.4.tar.gz#egg=aldryn-devsync==1.1.4
