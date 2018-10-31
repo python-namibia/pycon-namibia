@@ -5,7 +5,7 @@ https://control.divio.com/api/v1/apps/serve/aldryn-sso/1.1.16/dbe0c45a-c981-4beb
 https://control.divio.com/api/v1/apps/serve/aldryn-django-cms/3.5.2.2/88bf7991-90a3-4c98-acf5-42c3fa14e2a4/aldryn-django-cms-3.5.2.2.tar.gz#egg=aldryn-django-cms==3.5.2.2
 https://control.divio.com/api/v1/apps/serve/aldryn-devsync/1.1.4/a71c18c8-4738-497c-a3da-46ab59106ab8/aldryn-devsync-1.1.4.tar.gz#egg=aldryn-devsync==1.1.4
 https://control.divio.com/api/v1/apps/serve/aldryn-background-image/0.1.1/9e382593-2767-47af-82da-b586b1b0a8ea/aldryn-background-image-0.1.1.tar.gz#egg=aldryn-background-image==0.1.1
-https://control.divio.com/api/v1/apps/serve/aldryn-bootstrap3/1.2.2/ffa83c25-d86b-4b58-87ef-e1b05f43faa5/aldryn-bootstrap3-1.2.2.tar.gz#egg=aldryn-bootstrap3==1.2.2
+https://control.divio.com/api/v1/apps/serve/aldryn-bootstrap3/1.3.0/17797539-30ca-46c3-ab5f-d84beafc4270/aldryn-bootstrap3-1.3.0.tar.gz#egg=aldryn-bootstrap3==1.3.0
 https://control.divio.com/api/v1/apps/serve/aldryn-newsblog/2.1.1/7f7e0e5c-db27-4369-9151-ef7cd88c6ee1/aldryn-newsblog-2.1.1.tar.gz#egg=aldryn-newsblog==2.1.1
 https://control.divio.com/api/v1/apps/serve/aldryn-style/1.0.1/d5f209d4-6084-4e93-a538-e27b50e22b09/aldryn-style-1.0.1.tar.gz#egg=aldryn-style==1.0.1
 https://control.divio.com/api/v1/apps/serve/djangocms-file/2.0.2/f0e22a3c-8890-4013-93bc-02f0e937a570/djangocms-file-2.0.2.tar.gz#egg=djangocms-file==2.0.2
