@@ -3,7 +3,7 @@ web:
  links:
   - "db:postgres"
  ports:
-  - "8000:80"
+  - "9004:80"
  volumes:
   - ".:/app:rw"
   - "./data:/data:rw"
