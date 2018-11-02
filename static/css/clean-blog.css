@@ -409,7 +409,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
+  border-radius: 5px;
   padding: 15px 25px;
 }
 .btn-lg {
@@ -475,7 +475,6 @@ body {
     background: #03256c;
     text-decoration: none;
     border: none;
-    border-radius: 2px;
 }
 
 .btn-primary, .btn-primary:hover {background: #03256c;} /* blue */
