@@ -55,7 +55,7 @@ hr.small {
 /* -------------- masthead ----------------- */
 
 #masthead {
-    background: #03256c;
+    background: white;
     color: #ffce00;
     padding: 15px;
 }
@@ -90,6 +90,13 @@ span.reverse {color: #03256c; background: #ffce00; padding: 0px 2px 1px; border-
         font-size: 100%;
     }
 }
+
+div.claim {
+  background: #03256c;
+  padding: 5px 15px;
+  color: #ffce00;
+}
+
 
 /* -------------- navbar -------------- */
 .navbar-custom {

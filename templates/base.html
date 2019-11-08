@@ -42,16 +42,21 @@
 <body>
     {% cms_toolbar %}
     <div id="masthead">
-      <a id="logo" href="/">
-        <img src="{% static 'img/sun.png' %}" width="59" height="59" alt="PyCon Namibia – talks, workshops and collaboration">
-      </a>
-      <p id="site-name">PyCon Namibia <span class="reverse">2019</span></p>
+      <div class="container">
+        <a id="logo" href="/">
+          <img src="{% static 'img/logo2020.png' %}" width="214" height="100" alt="PyCon Namibia – talks, workshops and collaboration">
+        </a>
+      </div>
+    </div>
 
-      <p class="claim">The annual <strong>Python</strong> programming conference for professionals, entrepreneurs, scientists, academics and students.</p>
+    <div class="claim">
+      <div class="container">
+        <p class="claim">The annual <strong>Python</strong> programming conference for professionals, entrepreneurs, scientists, academics and students.</p>
+      </div>
     </div>
     <!-- Navigation -->
     <nav class="navbar-default navbar-custom">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
