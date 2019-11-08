@@ -28,7 +28,7 @@ aldryn_addons.settings.load(locals())
 # all django settings can be altered here
 
 INSTALLED_APPS.extend([
-    # add your project specific apps here
+    'axes',
 ])
 
 MIDDLEWARE_CLASSES.extend([
