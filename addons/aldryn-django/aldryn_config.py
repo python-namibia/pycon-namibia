@@ -2,9 +2,8 @@
 import json
 import os
 import sys
-from aldryn_client import forms
 
-SYSTEM_FIELD_WARNING = 'WARNING: this field is auto-written. Please do not change it here.'
+from aldryn_client import forms
 
 
 class CachedLoader(list):
@@ -42,7 +41,6 @@ class Form(forms.BaseForm):
         'Languages',
         required=True,
         initial='["en", "de"]',
-        help_text=SYSTEM_FIELD_WARNING,
     )
     use_manifeststaticfilesstorage = forms.CheckboxField(
         'Hash static file names',
@@ -100,8 +98,6 @@ class Form(forms.BaseForm):
         settings['DATA_ROOT'] = env('DATA_ROOT', os.path.join(settings['BASE_DIR'], 'data'))
         settings['SECRET_KEY'] = env('SECRET_KEY', 'this-is-not-very-random')
         settings['DEBUG'] = boolean_ish(env('DEBUG', False))
-        settings['ENABLE_SYNCING'] = boolean_ish(
-            env('ENABLE_SYNCING', settings['DEBUG']))
         settings['DISABLE_TEMPLATE_CACHE'] = boolean_ish(
             env('DISABLE_TEMPLATE_CACHE', settings['DEBUG']))
 
@@ -152,7 +148,7 @@ class Form(forms.BaseForm):
             'aldryn_django',
         ])
 
-        if settings['ENABLE_SYNCING'] or settings['DISABLE_TEMPLATE_CACHE']:
+        if settings['DISABLE_TEMPLATE_CACHE']:
             loader_list_class = list
         else:
             loader_list_class = CachedLoader
@@ -223,6 +219,8 @@ class Form(forms.BaseForm):
         return settings
 
     def domain_settings(self, data, settings, env):
+        from aldryn_addons.utils import boolean_ish
+
         settings['ALLOWED_HOSTS'] = env('ALLOWED_HOSTS', ['localhost', '*'])
         # will take a full config dict from ALDRYN_SITES_DOMAINS if available,
         # otherwise fall back to constructing the dict from DOMAIN,
@@ -232,6 +230,8 @@ class Form(forms.BaseForm):
             settings['DOMAIN'] = domain
 
         domains = env('ALDRYN_SITES_DOMAINS', {})
+        permanent_redirect = boolean_ish(env('ALDRYN_SITES_REDIRECT_PERMANENT', False))
+
         if not domains and domain:
             domain_aliases = [
                 d.strip()
@@ -252,6 +252,7 @@ class Form(forms.BaseForm):
                 },
             }
         settings['ALDRYN_SITES_DOMAINS'] = domains
+        settings['ALDRYN_SITES_REDIRECT_PERMANENT'] = permanent_redirect
 
         # This is ensured again by aldryn-sites, but we already do it here
         # as we need the full list of domains later when configuring
@@ -304,6 +305,7 @@ class Form(forms.BaseForm):
         settings['DJANGO_WEB_WORKERS'] = env('DJANGO_WEB_WORKERS', 3)
         settings['DJANGO_WEB_MAX_REQUESTS'] = env('DJANGO_WEB_MAX_REQUESTS', 500)
         settings['DJANGO_WEB_TIMEOUT'] = env('DJANGO_WEB_TIMEOUT', 120)
+        settings['IS_RUNNING_DEVSERVER'] = 'runserver' in sys.argv
 
         # https://docs.djangoproject.com/en/1.8/ref/settings/#use-x-forwarded-host
         settings['USE_X_FORWARDED_HOST'] = env('USE_X_FORWARDED_HOST', False)
@@ -358,16 +360,16 @@ class Form(forms.BaseForm):
         sentry_dsn = env('SENTRY_DSN')
 
         if sentry_dsn:
-            settings['INSTALLED_APPS'].append('raven.contrib.django')
-            settings['RAVEN_CONFIG'] = {
-                'dsn': sentry_dsn,
-                'release': env('GIT_COMMIT', 'develop'),
-                'environment': env('STAGE', 'local'),
-            }
-            settings['LOGGING']['handlers']['sentry'] = {
-                'level': 'ERROR',
-                'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
-            }
+            import sentry_sdk
+            from sentry_sdk.integrations.django import DjangoIntegration
+
+            sentry_sdk.init(
+                dsn=sentry_dsn,
+                integrations=[DjangoIntegration()],
+                debug=settings['DEBUG'],
+                release=env('GIT_COMMIT', 'develop'),
+                environment=env('STAGE', 'local'),
+            )
 
     def storage_settings_for_media(self, settings, env):
         import yurl
