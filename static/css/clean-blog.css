@@ -517,11 +517,14 @@ body {
 
 .smaller .panel-body,
 .smaller .panel-heading {
-    padding-left: 7px; padding-right: 2px;
+    padding-left: 7px; padding-right: 7px;
     }
 .smaller .panel, .panel-title {font-size: 90%}
-.smaller .panel p {margin: 0 0 4px;}
 .smaller .panel-body {padding-top: 0; padding-bottom: 0;}
+.smaller .panel-heading p {margin: 0; padding: 0;}
+.smaller .panel-body p {margin: 0 0 8px; padding: 4px 0; border-bottom: 1px solid #ccc;}
+.smaller .panel-body p:last-child {margin-bottom: 0; border-bottom: none;}
+
 
 p.talk-title {color: gray; font-size: 110%; font-style: italic; margin-top: 0;}
 h3.speaker {margin-bottom: 0; padding-bottom: 0;}
